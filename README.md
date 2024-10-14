@@ -33,13 +33,22 @@ Quando a conexão for estabelecida, o servidor irá criar um canal de comunicaç
 O arquivo `./indez.js`fornece um exemplo pratico de webClient bem como o envio de comandos padrões para o dispositivo remoto.
 
 Exemplos de comandos: 
+
 > `GS`: Retorna o status de todas IOs do hardware
+
 > `SLW{{text}}`: Escreve texto no painel LCD
+
 > `SS.GREEN`: Liga sinal VERDE, desliga sinal VERMELHO
+
 > `SSGP`: Pisca sinal VERDE
+
 > `SS.RED`: Liga sinal VERMELHO, desliga sinal VERDE
+
 > `SSRP`: Pisca sinal VERMELHO
+
 > `ABRE`: ABRE cancela
+
 > `FECHA`: FECHA cancela
+
 
 Consulte a lista completa de comandos para cada tipo de dispositivo
