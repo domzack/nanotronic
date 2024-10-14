@@ -42,8 +42,6 @@ const comando = {
 ws.on('open', function open() {
     /** Envia para o disposito comando VER que retorna VERSAO do firmware */
     comando.GetStatus(ws)
-
-    setTimeout(() => { comando.AbreCancela(ws) }, 2500)
 })
 
 /** websocket events */
