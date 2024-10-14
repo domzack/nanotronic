@@ -14,14 +14,16 @@ Client websocket exemplo: `./index.js`
 ## Diagrama basico
 ```mermaid
 graph LR
-A[Dispositivo: balanca ou cancela] --> B((Servidor Olfar x.x.x.211:8181))
+A[Dispositivo BRTRONIC: balanca ou cancela] --> B((Servidor Olfar x.x.x.211:8181))
 B --> D{webclient}
 D --> B
 B --> A
 ```
 
 # Data Stream
+
 > Hardware => **Server:8181** => ClientWebSocket
+
 > ClientWebSocket => **Server:8181** => Hardware
 
 Conectar ao servidor pela porta `8181`. Na url de conexao, passar o parametro `/link=IP_DISPOSITIVO`
