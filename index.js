@@ -33,12 +33,17 @@ const comando = {
     ResetLcd: (ws) => ws.send(`SLX`),                   // Reseta LCD
     LigaLcd: (ws) => ws.send(`SLON`),                   // Liga LCD
     DesligaLcd: (ws) => ws.send(`SLOFF`),               // Desliga LCD
+
+    AbreCancela: (ws) => ws.send(`ABRE`),               // AbreCancela
+    FechaCancela: (ws) => ws.send(`FECHA`),             // FechaCancela
 }
 
 /** Iniciando a conexao com o servidor */
 ws.on('open', function open() {
     /** Envia para o disposito comando VER que retorna VERSAO do firmware */
     comando.GetStatus(ws)
+
+    setTimeout(() => { comando.AbreCancela(ws) }, 2500)
 })
 
 /** websocket events */
