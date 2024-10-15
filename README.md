@@ -9,7 +9,7 @@ Client websocket exemplo: `./index.js`
 
 > **Note:** pasta `./balancas/` fornece um compilado com fotos e instrucoes para ligacao e configuracao do hardware responsavel por gerenciar os dispositivos na balanca.
 
-[help.md](./balancas/help.md)
+[help](./balancas/HELP.md)
 
 > **Note:** pasta `./cancelas/` fornece um compilado com fotos e instrucoes para ligacao e configuracao do hardware responsavel por controlar a cancela.
 
