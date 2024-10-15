@@ -41,7 +41,7 @@ const comando = {
 /** Iniciando a conexao com o servidor */
 ws.on('open', function open() {
     /** Envia para o disposito comando VER que retorna VERSAO do firmware */
-    comando.GetStatus(ws)
+    comando.GetVersion(ws)
 })
 
 /** websocket events */
