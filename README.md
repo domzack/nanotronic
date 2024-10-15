@@ -8,10 +8,11 @@ Este repositorio fornece instruções detalhadas e codigo exemplo para integraç
 Client websocket exemplo: `./index.js`
 
 > **Note:** pasta `./balancas/` fornece um compilado com fotos e instrucoes para ligacao e configuracao do hardware responsavel por gerenciar os dispositivos na balanca.
+[Goto help](./balancas/HELP.md)
 
-[help](./balancas/HELP.md)
 
 > **Note:** pasta `./cancelas/` fornece um compilado com fotos e instrucoes para ligacao e configuracao do hardware responsavel por controlar a cancela.
+[Goto help](./cancelas/HELP.md)
 
 ## Diagrama basico
 ```mermaid
