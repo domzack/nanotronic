@@ -24,8 +24,8 @@ Entrada P3 => Sensor Anti esmagamento
 ABRE		=> Abre Cancela
 FECHA		=> Fecha Cancela
 STATUS		=> Status Cancela
-GS			=> Status IOs
-VER			=> VERSION
+GS          => Status IOs
+VER         => VERSION
 ```
 
 ## GS: Get Status IOs
