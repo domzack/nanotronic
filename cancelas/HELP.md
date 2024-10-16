@@ -45,6 +45,6 @@ returns "11111111"
 4: P3(Antiesmagamento)   1=Standby,  0=Acionado
 3: P2(Pulso Fecha)       1=Standby,  0=Acionado
 2: P1(Pulso Abre)        1=Standby,  0=Acionado
-1: FC(Sensor Fechamento) 1=Standby,  0=Aberto
-0: AB(Sensor Abertura)   1=Standby,  0=Fechado
+1: FC(Sensor Fechamento) 1=Standby,  0=Fechado
+0: AB(Sensor Abertura)   1=Standby,  0=Aberto
 ```
