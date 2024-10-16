@@ -1,0 +1,1 @@
+Codigo exemplo para fazer stream direto na camera utilizando pacote rtsp
