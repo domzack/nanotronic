@@ -11,7 +11,7 @@ const WebSocket = require('ws')
 
 const servidor = '192.168.20.211'                // informar o ip do servidor 
 const porta = 8181                          // porta do serviço
-const dispositivo = '10.2.2.132'         // ip do dispositivo que deseja vincular
+const dispositivo = 'global'         // ip do dispositivo que deseja vincular
 
 /** criando uma conexao com servidor e vinculando ao dispositivo /link=[IP_DISPOSITIVO] */
 let ws = new WebSocket(`ws://${servidor}:${porta}/link=${dispositivo}`)
