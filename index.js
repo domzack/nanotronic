@@ -11,7 +11,7 @@ const WebSocket = require('ws')
 
 const servidor = '192.168.20.211'                // informar o ip do servidor 
 const porta = 8181                          // porta do serviço
-const dispositivo = 'global'         // ip do dispositivo que deseja vincular
+const dispositivo = '10.2.2.133'         // ip do dispositivo que deseja vincular
 
 /** criando uma conexao com servidor e vinculando ao dispositivo /link=[IP_DISPOSITIVO] */
 let ws = new WebSocket(`ws://${servidor}:${porta}/link=${dispositivo}`)
@@ -49,3 +49,22 @@ ws.on('message', function message(data) { console.log('Received:', data.toString
 ws.on('close', function close() { console.log('Disconnected from the server') })
 ws.on('error', function error(err) { console.error('Error:', err) })
 
+
+/** O codigo a baixo captura linhas digitadas no console 
+ * e envia para o WS como um comando.
+ * Experimente digital STATUS, VER, GS 
+*/
+
+var readline = require('readline');
+readline.emitKeypressEvents(process.stdin);
+
+if (process.stdin.isTTY) process.stdin.setRawMode(true)
+
+let command = ''
+process.stdin.on('keypress', (chunk, key) => {
+    // if (key && key.name == 'q') process.exit()
+    if (command == 'quit' || command == 'exit') process.exit()
+    if (chunk == '\r') { ws.send(command); console.log('ws.send:', command); command = '' }
+    else if (chunk == '\n') command = ''
+    else command += chunk
+});
