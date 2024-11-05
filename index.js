@@ -62,7 +62,6 @@ if (process.stdin.isTTY) process.stdin.setRawMode(true)
 
 let command = ''
 process.stdin.on('keypress', (chunk, key) => {
-    // if (key && key.name == 'q') process.exit()
     if (command == 'quit' || command == 'exit') process.exit()
     if (chunk == '\r') { ws.send(command); console.log('ws.send:', command); command = '' }
     else if (chunk == '\n') command = ''
